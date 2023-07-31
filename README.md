@@ -6,6 +6,7 @@ Quick links:
 [Tools Installation](#day0)
 <details>
   <summary> <strong>Day_0</strong></summary>
+	<a name="day0"></a>
    <details>
      <summary>iverilog</summary>
      Commands used for iverilog installation:
