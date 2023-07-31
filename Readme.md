@@ -2,7 +2,8 @@
 This repository explains the coursework of ASIC Design done by Nitesh Sharma.<br>
 [Tools Installation](#day-0)
 <details>
-  <summary>##Day0</summary>
+  <summary><strong>Day0</summary>
+  <a name = "day-0"></a>
   
   <details>
     <summary>iverilog Installation</summary>
