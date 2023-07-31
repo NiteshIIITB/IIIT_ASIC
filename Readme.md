@@ -11,7 +11,7 @@ This repository explains the coursework of ASIC Design done by Nitesh Sharma.<br
     
     sudo apt-get update
     sudo apt-get install iverilog.
-    
+    <br>
     Below is the screenshot of iverilog installation:
   <img src ="https://user-images.githubusercontent.com/140998787/257133371-5ee81e29-7172-4958-8619-d11be643f8be.png">
     
