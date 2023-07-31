@@ -10,7 +10,7 @@ This repository explains the coursework of ASIC Design done by Nitesh Sharma.<br
     I installed iverilog using following commands:
     ```
     sudo apt-get update
-    sudo apt-get install iverilog
+    sudo apt-get install iverilog.
   
     ```
     Below is the screenshot of iverilog installation:
