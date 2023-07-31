@@ -1,12 +1,12 @@
 #ASIC_Design Class
-This repository explains the coursework of ASIC Design done by Nitesh Sharma.
+This repository explains the coursework of ASIC Design done by Nitesh Sharma.<br>
 [Tools Installation](#day-0)
 <details>
-  <summary>Day0</summary>
-  ##Day 0
+  <summary>##Day0</summary>
+  
   <details>
     <summary>iverilog Installation</summary>
     Below is the screenshot of iverilog installation:
-    <img src ="">
+    <img src ="https://user-images.githubusercontent.com/140998787/257133371-5ee81e29-7172-4958-8619-d11be643f8be.png">
   </details>
 </details>
