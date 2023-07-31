@@ -2,7 +2,7 @@ ASIC_Design Class
 This repository explains the coursework of ASIC Design done by Nitesh Sharma.<br>
 [Tools Installation](#day-0)
 <details>
-  <summary><strong>Day0</summary>
+  <summary><strong>Day0</strong></summary>
   <a name = "day-0"></a>
   
   <details>
