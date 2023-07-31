@@ -1,4 +1,4 @@
-#ASIC_Design Class
+<h1>ASIC_Design Class</h1>
 This repository explains the coursework of ASIC Design done by Nitesh Sharma.<br>
 [Tools Installation](#day-0)
 <details>
