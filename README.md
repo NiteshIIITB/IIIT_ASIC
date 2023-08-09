@@ -57,3 +57,19 @@ Checking Installation of Yosys
     <img src="https://user-images.githubusercontent.com/140998787/257133324-7888d6c3-e880-4da1-b751-961ec80847b8.png">
   </details>
 </details>
+
+
+
+<details>
+	<summary><strong>Day 1</strong></summary>
+	<h3>Overview</h3>
+        <p>Today I performed Logic synthesis of a simple 2X1 MUX based on <a>sky130_fd_sc_hd__tt_025C_1v80</a> library  as my LAB 1 work. Tools used in this process included : 
+	<ul>
+		<li>Iverilog</li>
+		<li>GTKwave</li>
+		<li>Yosys</li>
+	</ul>
+<hr>
+  <h4>Step 1</h4> Below is the verilog code for a 2x1 MUX:<br><img src=></p>
+	
+</details>
