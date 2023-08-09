@@ -136,6 +136,33 @@ Image for execution of above commands
 <img src = "https://user-images.githubusercontent.com/140998787/259437514-7856401e-6790-4f8a-95c0-bec59d68a400.png">
 <br>
 
+<img src ="">
+<br>
+<h4>Step 2:</h4> <br>
+Once it is verified that code produces the same output as expected . Now we add libraries related to technology node and generate schematic and netlist using yosys.
+Following commands are used for doing so:
+
+```
+yosys
+```
+
+```
+read_liberty -lib file_address
+```
+
+```
+read_verilog Verilog_Filename.v
+```
+
+```
+synth -top Design_name
+```
+
+```
+abc -liberty library_location
+```
+
+<br>
 
 </p>
 	
