@@ -123,6 +123,17 @@ Command used to simulate code and corresponding Testbench:
 
 ```
 iverilog good_mux.v tb_good_mux.v
+
+```
+<br>
+Command for viewing output waveforms:
+
+```
+gtkwave
+```
+<br>
+Image for execution of above commands
+<img src = "">
 ```
 </p>
 	
