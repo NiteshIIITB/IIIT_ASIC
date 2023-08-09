@@ -70,6 +70,60 @@ Checking Installation of Yosys
 		<li>Yosys</li>
 	</ul>
 <hr>
-  <h4>Step 1</h4> Below is the verilog code for a 2x1 MUX:<br><img src=></p>
+  <h4>Step 1</h4> Below is the verilog code for a 2x1 MUX:<br>
+	
+```
+   module good_mux (input i0 , input i1 , input sel , output reg y);
+   always @ (*)
+   begin
+	if(sel)
+		y <= i1;
+	else 
+		y <= i0;
+   end
+   endmodule
+   
+```
+<br>
+Testbench
+
+```
+`timescale 1ns / 1ps
+module tb_good_mux;
+	// Inputs
+	reg i0,i1,sel;
+	// Outputs
+	wire y;
+
+        // Instantiate the Unit Under Test (UUT)
+	good_mux uut (
+		.sel(sel),
+		.i0(i0),
+		.i1(i1),
+		.y(y)
+	);
+
+	initial begin
+	$dumpfile("tb_good_mux.vcd");
+	$dumpvars(0,tb_good_mux);
+	// Initialize Inputs
+	sel = 0;
+	i0 = 0;
+	i1 = 0;
+	#300 $finish;
+	end
+
+always #75 sel = ~sel;
+always #10 i0 = ~i0;
+always #55 i1 = ~i1;
+endmodule
+```
+<br>
+Command used to simulate code and corresponding Testbench:
+
+```
+iverilog good_mux.v tb_good_mux.v
+```
+</p>
 	
 </details>
