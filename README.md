@@ -133,8 +133,10 @@ gtkwave
 ```
 <br>
 Image for execution of above commands
-<img src = "">
-```
+<img src = "https://user-images.githubusercontent.com/140998787/259437514-7856401e-6790-4f8a-95c0-bec59d68a400.png">
+<br>
+
+
 </p>
 	
 </details>
