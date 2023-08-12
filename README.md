@@ -306,12 +306,12 @@ endmodule
 <br>
 <b>Conventional Implementation:</b>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="">
   </div>
   <br>
   <b>Synthesis Tool Output:</b>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260247178-138e3d4e-fb3e-4783-8c55-428f247ecade.png">
   </div>
   <br>
   
@@ -324,7 +324,7 @@ endmodule
 	 Y = a.1 + a`.b
          Y = a + a`.b   
          Y = a + b  (by distributive law)
-	 Both circuits are equivalent(Inverted Nand is equivalent to OR gate)
+	 Both circuits are equivalent
 	
 ```
 
@@ -332,20 +332,17 @@ endmodule
 <p>
 	<h4>Steps Involved</h4>
 	 <div align="center">
-    <img src="">
+    <img src="https://user-images.githubusercontent.com/140998787/260247175-01ceb27e-313c-4db7-b9f7-6baa33196c8d.png">
   </div>
 <br>
  <div align="center">
-    <img src="">
+    <img src="https://github.com/NiteshIIITB/IIIT_ASIC/assets/140998787/9411cbe6-219d-4a7f-a608-041144a9b641">
   </div>
   <br>
    <div align="center">
-    <img src="">
+    <img src="https://user-images.githubusercontent.com/140998787/260247172-99d653b5-d7a8-4b20-8a71-58bfb12f3779.png">
   </div>
-  <br>
-   <div align="center">
-    <img src="">
-  </div>
+  
   
 </p>
 
