@@ -212,6 +212,37 @@ endmodule
 </p>
 	
 </details>
+<details>
+	<summary><strong>Day 3</strong></summary>
+	<h2>Theory</h2>
+	<h3>Overview</h3>
+	<p>This section highlights various logic optimisations performed by the synthesis tools.The major advantage of doing optimisations is that design becomes efficient and occupies less area and consumes lesser power. </p>
+	<h3>Combinational logic optimisations</h3>
+	<p>Common ways of doing combinational logic optimisations:
+	 <ul>
+		 <li><b>Constant Propogation :</b>Constant propagation is a specific technique used in logic optimization to simplify combinational logic circuits by replacing variables with                            their constant values wherever possible. This optimization helps reduce the complexity of the circuit and can lead to improvements in both performance and area          utilization.</li>
+		 <li><b>Boolean Logic Optimisation :</b>
+		 <ul>
+			 <li>Karnaugh Maps (K-Maps): A graphical method used to identify and group minterms or maxterms in a truth table, leading to simplified Boolean expressions.</li>
+			 <li>Quine-McCluskey Method: An algorithmic approach to find the minimal sum-of-products (or product-of-sums) expressions for a Boolean function. </li>
+		 </ul>There are various other ways of Boolean logic Optimisations.</li>
+	 </ul><br>Demonstrations of these optimisations are included in the following lab work.</p>
+	<h3>Sequential Logic Optimisations</h3>
+	<p>
+		<ul>
+			<li><b>Basic</b>
+			<ul><li>Sequential Constant Propogation: Similar to combinational logic optimization, the goal is to identify signals that are guaranteed to be constant at specific points                                  in time and then propagate these constants through the sequential elements.</li></ul>
+			Demonstrations of these are included in the following</li>
+                       <li><b>Advanced</b>
+		           <ul>
+			    <li>State Optimisation : State optimization minimizes the number of states in a finite state machine by identifying and collapsing equivalent or unreachable states,                                      reducing complexity and improving efficiency.</li> 
+			      <li>Sequential Logic Cloning</li> 
+			       <li>Retiming : It refers to adjusting delays of intermediate combinational circuits to enhance the operating speed of the digital circuit.</li>
+		             </ul>
+		       </li>	
+		</ul>
+	</p>
+</details>
 
 <h2>References</h2>
 <ul>
