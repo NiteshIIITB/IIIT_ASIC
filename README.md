@@ -259,7 +259,7 @@ endmodule
   <br>
   <b>Synthesis Tool Output:</b>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260244399-92d0fe15-cdef-42db-a350-86de660efed7.png">
   </div>
   <br>
   
@@ -279,19 +279,19 @@ endmodule
 <p>
 	<h4>Steps Involved</h4>
 	 <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260244396-12282dc5-4d76-4a0f-a63e-4a9d4ffa91ff.png">
   </div>
 <br>
  <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260244395-1bcb75d8-8211-49a4-b5f9-2ef8657736d9.png">
   </div>
   <br>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260244394-6f73b3ea-42e9-4892-ad7d-a3f398997ee0.png">
   </div>
   <br>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260244391-e56d3b0a-c62f-4aa8-8ee8-e3639413283a.png">
   </div>
   
 </p>
@@ -332,19 +332,19 @@ endmodule
 <p>
 	<h4>Steps Involved</h4>
 	 <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="">
   </div>
 <br>
  <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="">
   </div>
   <br>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="">
   </div>
   <br>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="">
   </div>
   
 </p>
