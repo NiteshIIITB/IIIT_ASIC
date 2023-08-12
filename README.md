@@ -242,6 +242,377 @@ endmodule
 		       </li>	
 		</ul>
 	</p>
+	<h2>Demonstrations</h2>
+	<h3>Combinational logic optimisation</h3>
+
+ ```
+module opt_check (input a , input b , output y);
+	assign y = a?b:0;
+endmodule
+```
+
+<br>
+<b>Conventional Implementation:</b>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+  <b>Synthesis Tool Output:</b>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+  
+    
+<p>
+	<b>Equivalence of both</b><br>
+	
+```
+         From Conventional  Circuit:
+	 Y = a.b + a`.0
+         Y = a.b
+	 Both circuits are equivalent
+	
+```
+
+</p>
+<p>
+	<h4>Steps Involved</h4>
+	 <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+<br>
+ <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  
+</p>
+<br>
+
+<b>Design 2</b><br>
+```
+module opt_check2 (input a , input b , output y);
+	assign y = a?1:b;
+endmodule
+```
+<br>
+<b>Conventional Implementation:</b>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+  <b>Synthesis Tool Output:</b>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+  
+    
+<p>
+	<b>Equivalence of both</b><br>
+	
+```
+         From Conventional  Circuit:
+	 Y = a.1 + a`.b
+         Y = a + a`.b   
+         Y = a + b  (by distributive law)
+	 Both circuits are equivalent(Inverted Nand is equivalent to OR gate)
+	
+```
+
+</p>
+<p>
+	<h4>Steps Involved</h4>
+	 <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+<br>
+ <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  
+</p>
+
+<br>
+
+<b>Design 3</b><br>
+```
+
+module opt_check3 (input a , input b, input c , output y);
+	assign y = a?(c?b:0):0;
+endmodule
+```
+<br>
+<b>Conventional Implementation:</b>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+  <b>Synthesis Tool Output:</b>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+  
+    
+<p>
+	<b>Equivalence of both</b><br>
+	
+```
+         From Conventional  Circuit:
+	 Y = a.(c.b + c`.0) + a`.0
+         Y = a(b.c) + 0  
+         Y = a.b.c 
+	 Both circuits are equivalent
+	
+```
+
+</p>
+<p>
+	<h4>Steps Involved</h4>
+	 <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+<br>
+ <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  
+</p>
+
+<br>
+
+<b>Design 4</b><br>
+```
+
+module opt_check4 (input a , input b , input c , output y);
+ assign y = a?(b?(a & c ):c):(!c);
+ endmodule
+```
+<br>
+<b>Conventional Implementation:</b>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+  <b>Synthesis Tool Output:</b>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+  
+    
+<p>
+	<b>Equivalence of both</b><br>
+	
+```
+         From Conventional  Circuit:
+	 Y = a.(b(a.c)+ b`c) + a`.c`
+         Y = a(b.c.a + b`c) + a`.c`
+         Y = ac(a+b`) + a`.c`
+         Y = ac +
+         Y = a.b.c 
+	 Both circuits are equivalent
+	
+```
+
+</p>
+<p>
+	<h4>Steps Involved</h4>
+	 <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+<br>
+ <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  
+</p>
+
+
+<br>
+
+<b>Design 5</b><br>
+```
+
+module sub_module1(input a , input b , output y);
+ assign y = a & b;
+endmodule
+
+
+module sub_module2(input a , input b , output y);
+ assign y = a^b;
+endmodule
+
+
+module multiple_module_opt(input a , input b , input c , input d , output y);
+wire n1,n2,n3;
+
+sub_module1 U1 (.a(a) , .b(1'b1) , .y(n1));
+sub_module2 U2 (.a(n1), .b(1'b0) , .y(n2));
+sub_module2 U3 (.a(b), .b(d) , .y(n3));
+
+assign y = c | (b & n1); 
+
+
+endmodule
+```
+<br>
+<b>Conventional Implementation:</b>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+  <b>Synthesis Tool Output:</b>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+  
+    
+<p>
+	<b>Equivalence of both</b><br>
+	
+```
+         From Conventional  Circuit:
+	 Y = a.(b(a.c)+ b`c) + a`.c`
+         Y = a(b.c.a + b`c) + a`.c`
+         Y = ac(a+b`) + a`.c`
+         Y = ac +
+         Y = a.b.c 
+	 Both circuits are equivalent
+	
+```
+
+</p>
+<p>
+	<h4>Steps Involved</h4>
+	 <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+<br>
+ <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  
+</p>
+
+<br>
+
+<b>Design 6</b><br>
+```
+
+
+module sub_module(input a , input b , output y);
+ assign y = a & b;
+endmodule
+
+
+
+module multiple_module_opt2(input a , input b , input c , input d , output y);
+wire n1,n2,n3;
+
+sub_module U1 (.a(a) , .b(1'b0) , .y(n1));
+sub_module U2 (.a(b), .b(c) , .y(n2));
+sub_module U3 (.a(n2), .b(d) , .y(n3));
+sub_module U4 (.a(n3), .b(n1) , .y(y));
+
+
+endmodule
+```
+<br>
+<b>Conventional Implementation:</b>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+  <b>Synthesis Tool Output:</b>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+  
+    
+<p>
+	<b>Equivalence of both</b><br>
+	
+```
+         From Conventional  Circuit:
+	 Y = a.(b(a.c)+ b`c) + a`.c`
+         Y = a(b.c.a + b`c) + a`.c`
+         Y = ac(a+b`) + a`.c`
+         Y = ac +
+         Y = a.b.c 
+	 Both circuits are equivalent
+	
+```
+
+</p>
+<p>
+	<h4>Steps Involved</h4>
+	 <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+<br>
+ <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  
+</p>
+
+
+
+
+
+
 </details>
 
 <h2>References</h2>
