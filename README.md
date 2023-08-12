@@ -244,6 +244,8 @@ endmodule
 	</p>
 	<h2>Demonstrations</h2>
 	<h3>Combinational logic optimisation</h3>
+ <br>
+ <h3>Design 1</h3>
 
  ```
 module opt_check (input a , input b , output y);
@@ -297,12 +299,14 @@ endmodule
 </p>
 <br>
 
-<b>Design 2</b><br>
+<h3>Design 2</h3><br>
+
 ```
 module opt_check2 (input a , input b , output y);
 	assign y = a?1:b;
 endmodule
 ```
+
 <br>
 <b>Conventional Implementation:</b>
    <div align="center">
@@ -348,7 +352,8 @@ endmodule
 
 <br>
 
-<b>Design 3</b><br>
+<h3>Design 3</h3><br>
+
 ```
 
 module opt_check3 (input a , input b, input c , output y);
@@ -400,13 +405,15 @@ endmodule
 
 <br>
 
-<b>Design 4</b><br>
+<h3>Design 4</h3><br>
+
 ```
 
 module opt_check4 (input a , input b , input c , output y);
  assign y = a?(b?(a & c ):c):(!c);
  endmodule
 ```
+
 <br>
 <b>Conventional Implementation:</b>
    <div align="center">
@@ -415,7 +422,7 @@ module opt_check4 (input a , input b , input c , output y);
   <br>
   <b>Synthesis Tool Output:</b>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260249845-62f9ad6c-d55e-4640-92ec-dfc092f3091e.png">
   </div>
   <br>
   
@@ -438,27 +445,25 @@ module opt_check4 (input a , input b , input c , output y);
 <p>
 	<h4>Steps Involved</h4>
 	 <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260249843-b64da2ae-d83c-4745-81d8-b15d4844257d.png">
   </div>
 <br>
  <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260249842-89532985-6682-4ac8-82e6-0bf3b44cf340.png">
   </div>
   <br>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260249838-1bb6a678-a2bd-4e41-a6ec-b80a85e643f9.png">
   </div>
-  <br>
-   <div align="center">
-    <img src="path-to-your-image.jpg">
-  </div>
-  
+ 
+    
 </p>
 
 
 <br>
 
-<b>Design 5</b><br>
+<h3>Design 5</h3><br>
+
 ```
 
 module sub_module1(input a , input b , output y);
@@ -483,6 +488,7 @@ assign y = c | (b & n1);
 
 endmodule
 ```
+
 <br>
 <b>Conventional Implementation:</b>
    <div align="center">
@@ -534,6 +540,7 @@ endmodule
 <br>
 
 <b>Design 6</b><br>
+
 ```
 
 
