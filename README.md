@@ -363,7 +363,7 @@ endmodule
   <br>
   <b>Synthesis Tool Output:</b>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260247998-e99d5ca1-ef36-433f-911a-b2946ffe1ad1.png">
   </div>
   <br>
   
@@ -384,20 +384,17 @@ endmodule
 <p>
 	<h4>Steps Involved</h4>
 	 <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260247997-f1d5c12a-7256-4d0f-b182-af6f720f7760.png">
   </div>
 <br>
  <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260247996-0b0c6209-eb08-4c99-a629-5769e2915510.png">
   </div>
   <br>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260247995-e7a02aa7-4375-4cdb-804f-5dcf59e4f884.png">
   </div>
   <br>
-   <div align="center">
-    <img src="path-to-your-image.jpg">
-  </div>
   
 </p>
 
