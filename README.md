@@ -911,6 +911,104 @@ endmodule
   
 </p>
 
+<p>
+	<h2>Sequential Optimisations of unused outputs</h2>
+	<p>The logic elements which does not have any impact on primary outputs of the module gets optimised such that we have a circuit that drives the output in desired way and portion of circuit driving unneccessary logic elements gets removed.We understand it more clearly through following examples.</p>
+        <h3>Design 1</h3>
+	
+
+```
+module counter_opt (input clk , input reset , output q);
+reg [2:0] count;
+assign q = count[0];
+
+always @(posedge clk ,posedge reset)
+begin
+	if(reset)
+		count <= 3'b000;
+	else
+		count <= count + 1;
+end
+
+endmodule
+
+```
+
+<br>
+In the above circuit code is defining an up counter and output depends on count[0] and not on other two bits of count. So, after synthesis we get a single D-flip flop(as shown below) rather than three flipflops. This is because output does not depends on other two bits of counter so it gets optimised to produce a circuit that is neccessary to drive the output in desired manner.
+
+<br>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260304146-83d69d2c-cdf2-4a3e-94b9-e830f1170722.png">
+</div>
+<br>
+
+
+<p><h4>Steps Involved</h4>
+	<br>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260304141-96f4f751-b26e-4f0e-b41a-b97b333d710e.png">
+</div>
+
+<br>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260304144-2b444ba8-e5ab-4c1d-848e-054009d68b4f.png">
+</div>
+
+<br>
+
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260304145-fb2e7535-1b72-4ba4-8dfb-db3fa4388316.png">
+</div>
+
+<br>
+
+</p>
+</p>
+ <h3>Design 2</h3>
+ 
+```
+module counter_opt2 (input clk , input reset , output q);
+reg [2:0] count;
+assign q = (count[2:0] == 3'b100);
+
+always @(posedge clk ,posedge reset)
+begin
+	if(reset)
+		count <= 3'b000;
+	else
+		count <= count + 1;
+end
+
+endmodule
+```
+
+<br>
+In the above circuit code is defining an up counter and output depends on all the three bits of count. So, after synthesis we get three D-flip flops(as shown below) . Here circuit is not reduced because output depends all the bits of counter.
+
+<br>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260304139-9a5a9d34-eb83-44c4-ac72-be6e16d6870e.png">
+</div>
+<br>
+
+
+<p><h4>Steps Involved</h4>
+	<br>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260304137-0ff9dd97-5f3a-4c21-ae2c-e7a0d541328d.png">
+</div>
+
+<br>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260304138-054cf173-a2a3-4ea2-9d98-e260678ee1d2.png">
+</div>
+<br>
+
+
+</p>
+</p>
+
 
 </details>
 
