@@ -609,6 +609,247 @@ endmodule
   
 </p>
 
+<h3>Sequential Logic Optimisations</h3><br>
+<p>In this section various cases of constant propogation in Sequential circuit are being demonstrated. Through logic optimisations via Sequential constant propogation it is seen that the cases in which conventional implementation is seen as a combination of flip-flops can be optimised to a circuit without flip-flops. Though constant propogation does not simply guarantee the reduction of flip-flops as is observed in the following examples. </p><hr>
+
+
+<p>
+	<h3><u>Design 1</u></h3>
+	
+```
+         module dff_const1(input clk, input reset, output reg q);
+         always @(posedge clk, posedge reset)
+         begin
+	  if(reset)
+		q <= 1'b0;
+	  else
+		q <= 1'b1;
+         end
+
+         endmodule
+
+```
+
+ <h4>Conventional implementation:</h4>
+ <div align ="center">
+	 <img src = "">
+ </div>
+
+ <h4>Synthesis Tool Output:</h4>
+ <div align ="center">
+	 <img src = "https://user-images.githubusercontent.com/140998787/260280385-8940d1d3-6c27-4857-8745-9ecc7e3695fe.png">
+ </div>
+ 
+<h4>Explanation</h4>
+<b>Waveform for above circuit:</b><br>
+<div align ="center">
+	 <img src = "https://user-images.githubusercontent.com/140998787/260283302-59f55bf4-6c76-4b3a-9d13-06a99ec810ff.png">
+ </div>
+
+ <p>From above waveforms it can be seen that the output depends on clock so presence of flip-flop is required.</p>
+
+</p>
+<p>
+	<h4>Steps Involved</h4>
+	 <div align="center">
+    <img src="https://user-images.githubusercontent.com/140998787/260280384-50caf946-cc97-481e-ab55-e827f1828589.png">
+  </div>
+<br>
+ <div align="center">
+    <img src="https://user-images.githubusercontent.com/140998787/260280383-dfd9d2c6-832a-4304-ba8e-13c4576d142f.png">
+  </div>
+  <br>
+   <div align="center">
+    <img src="https://user-images.githubusercontent.com/140998787/260280339-03bf3231-0c3f-4bee-a0eb-f305b0b7c360.png">
+  </div>
+  <br>
+ 
+</p>
+
+
+<p>
+	<h3><u>Design 2</u></h3>
+	
+```
+        module dff_const2(input clk, input reset, output reg q);
+        always @(posedge clk, posedge reset)
+        begin
+	if(reset)
+		q <= 1'b1;
+	else
+		q <= 1'b1;
+        end
+
+        endmodule
+```
+
+ <h4>Conventional implementation:</h4>
+ <div align ="center">
+	 <img src = "">
+ </div>
+
+ <h4>Synthesis Tool Output:</h4>
+ <div align ="center">
+	 <img src = "https://user-images.githubusercontent.com/140998787/260280378-0ae20c21-027e-4898-89a1-0775f25ee37a.png">
+ </div>
+ 
+<h4>Explanation</h4>
+<b>Waveform for above circuit:</b><br>
+<div align ="center">
+	 <img src = "https://user-images.githubusercontent.com/140998787/260280380-2d1cc7d5-6e84-4544-9b49-f84d82951852.png">
+ </div>
+
+ <p>From above waveforms it can be seen that the output  remains 1 and does not depends on clock flip-flop is not required and circuit gets optimised as a buffer.</p>
+
+</p>
+<p>
+	<h4>Steps Involved</h4>
+	 <div align="center">
+    <img src="https://user-images.githubusercontent.com/140998787/260280374-fd49b7ce-a8f0-4b4d-9ec3-0433a1048c8f.png">
+  </div>
+<br>
+ <div align="center">
+    <img src="https://user-images.githubusercontent.com/140998787/260280370-1913366d-3a71-466f-90ef-811b718e08f2.png">
+  </div>
+  <br>
+   <div align="center">
+    <img src="https://user-images.githubusercontent.com/140998787/260280362-5a0b8868-501d-4a51-ac99-62bc55394426.png">
+  </div>
+  <br>
+  
+</p>
+
+
+
+<p>
+	<h3><u>Design 3</u></h3>
+ 
+	
+```
+       module dff_const3(input clk, input reset, output reg q);
+       reg q1;
+
+       always @(posedge clk, posedge reset)
+        begin
+	if(reset)
+	begin
+		q <= 1'b1;
+		q1 <= 1'b0;
+	end
+	else
+	begin
+		q1 <= 1'b1;
+		q <= q1;
+	end
+        end
+
+        endmodule
+
+```
+
+ <h4>Conventional implementation:</h4>
+ <div align ="center">
+	 <img src = "">
+ </div>
+
+ <h4>Synthesis Tool Output:</h4>
+ <div align ="center">
+	 <img src = "">
+ </div>
+ 
+<h4>Explanation</h4>
+<b>Waveform for above circuit:</b><br>
+<div align ="center">
+	 <img src = "">
+ </div>
+
+ <p>From above waveforms it can be seen that the output and the intermediate signal value depends on clock so flip-flop is required.</p>
+
+</p>
+
+<p>
+	<h4>Steps Involved</h4>
+	 <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+<br>
+ <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  
+</p>
+
+<h3><u>Design 4</u></h3>
+ 
+	
+```
+      module dff_const4(input clk, input reset, output reg q);
+      reg q1;
+
+      always @(posedge clk, posedge reset)
+      begin
+       if(reset)
+	begin
+		q <= 1'b1;
+		q1 <= 1'b1;
+       end
+       else
+       begin
+		q1 <= 1'b1;
+		q <= q1;
+      end
+      end
+
+     endmodule
+
+```
+
+ <h4>Conventional implementation:</h4>
+ <div align ="center">
+	 <img src = "">
+ </div>
+
+ <h4>Synthesis Tool Output:</h4>
+ <div align ="center">
+	 <img src = "">
+ </div>
+ 
+<h4>Explanation</h4>
+<b>Waveform for above circuit:</b><br>
+<div align ="center">
+	 <img src = "">
+ </div>
+
+ <p>From above waveforms it can be seen that the output and the intermediate signal value does not depends on clock so flip-flop is not required.</p>
+
+</p>
+<p>
+	<h4>Steps Involved</h4>
+	 <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+<br>
+ <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  <br>
+   <div align="center">
+    <img src="path-to-your-image.jpg">
+  </div>
+  
+</p>
 
 
 
