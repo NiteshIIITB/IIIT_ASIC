@@ -633,10 +633,7 @@ endmodule
 
 ```
 
- <h4>Unoptimised implementation:</h4>
- <div align ="center">
-	 <img src = "https://user-images.githubusercontent.com/140998787/260307292-6fd58fb2-64f8-471f-996a-b12d34716161.jpeg" width="400" height="400">
- </div>
+ <br><p>Here Code represents a D-flipflop input of which is fixed at logic 1 and reset makes output logic 0. Though the input is constant but it does not simplify the circuit as seen in the below figure depicting synthesis output.</p><br>
 
  <h4>Synthesis Tool Output:</h4>
  <div align ="center">
@@ -649,7 +646,7 @@ endmodule
 	 <img src = "https://user-images.githubusercontent.com/140998787/260283302-59f55bf4-6c76-4b3a-9d13-06a99ec810ff.png">
  </div>
 
- <p>From above waveforms it can be seen that the output depends on clock so presence of flip-flop is required.Hence unoptimised representation is same as final output.</p>
+ <p>From above waveforms it can be seen that the output depends on clock so presence of flip-flop is required.</p>
 
 </p>
 <p>
@@ -686,11 +683,7 @@ endmodule
         endmodule
 ```
 
- <h4>Unoptimised implementation:</h4>
- <div align ="center">
-	 <img src = "https://user-images.githubusercontent.com/140998787/260307292-6fd58fb2-64f8-471f-996a-b12d34716161.jpeg"  width="400" height="400">
- </div>
-
+<br><p> Here input D-flipflop is fixed at logic 1 and reset also makes output 1. So, q always remains 1 hence circuit gets optimised as a buffer. </p><br>
  <h4>Synthesis Tool Output:</h4>
  <div align ="center">
 	 <img src = "https://user-images.githubusercontent.com/140998787/260280378-0ae20c21-027e-4898-89a1-0775f25ee37a.png">
@@ -750,11 +743,7 @@ endmodule
 
 ```
 
- <h4>Unoptimised implementation:</h4>
- <div align ="center">
-	 <img src = "">
- </div>
-
+<br><p>Here code represents two cascaded D flipflops and input of 1st D-flipflop is fixed at 1. </p> <br>
  <h4>Synthesis Tool Output:</h4>
  <div align ="center">
 	 <img src = "https://user-images.githubusercontent.com/140998787/260280351-4cc14a53-3fd9-4d7f-ab75-b6e9fc8c4ee6.png">
@@ -812,10 +801,7 @@ endmodule
 
 ```
 
- <h4>Unoptimised implementation:</h4>
- <div align ="center">
-	 <img src = "">
- </div>
+<br><p>Here code represents two cascaded D flipflops and input of 1st D-flipflop is fixed at 1.But unlike the previous case circuit gets optimised into buffers.</p> <br>
 
  <h4>Synthesis Tool Output:</h4>
  <div align ="center">
@@ -869,11 +855,7 @@ end
 endmodule
 
 ```
-
- <h4>Unoptimised implementation:</h4>
- <div align ="center">
-	 <img src = "">
- </div>
+<br><p>Here code represents two cascaded D flipflops and input of 1st D-flipflop is fixed at 1. </p> <br>
 
  <h4>Synthesis Tool Output:</h4>
  <div align ="center">
