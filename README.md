@@ -257,7 +257,7 @@ endmodule
 <br>
 <b>Conventional Implementation:</b>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260305003-db18752e-aca7-4411-b132-f7dbf4b4305c.jpeg" width="400" height="400">
   </div>
   <br>
   <b>Synthesis Tool Output:</b>
