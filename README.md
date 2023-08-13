@@ -311,7 +311,7 @@ endmodule
 <br>
 <b>Conventional Implementation:</b>
    <div align="center">
-    <img src="">
+    <img src="https://user-images.githubusercontent.com/140998787/260305542-53f343c9-6fe2-4aea-95a8-7bdfcc7cb85e.jpeg" width="400" height="400">
   </div>
   <br>
   <b>Synthesis Tool Output:</b>
