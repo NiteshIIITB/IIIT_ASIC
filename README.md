@@ -635,7 +635,7 @@ endmodule
 
  <h4>Unoptimised implementation:</h4>
  <div align ="center">
-	 <img src = "https://user-images.githubusercontent.com/140998787/260307292-6fd58fb2-64f8-471f-996a-b12d34716161.jpeg">
+	 <img src = "https://user-images.githubusercontent.com/140998787/260307292-6fd58fb2-64f8-471f-996a-b12d34716161.jpeg" width="400" height="400">
  </div>
 
  <h4>Synthesis Tool Output:</h4>
@@ -643,7 +643,7 @@ endmodule
 	 <img src = "https://user-images.githubusercontent.com/140998787/260280385-8940d1d3-6c27-4857-8745-9ecc7e3695fe.png">
  </div>
  
-<h4>Explanation</h4>
+<br><h4>Explanation</h4><br>
 <b>Waveform for above circuit:</b><br>
 <div align ="center">
 	 <img src = "https://user-images.githubusercontent.com/140998787/260283302-59f55bf4-6c76-4b3a-9d13-06a99ec810ff.png">
@@ -688,7 +688,7 @@ endmodule
 
  <h4>Unoptimised implementation:</h4>
  <div align ="center">
-	 <img src = "https://user-images.githubusercontent.com/140998787/260307292-6fd58fb2-64f8-471f-996a-b12d34716161.jpeg">
+	 <img src = "https://user-images.githubusercontent.com/140998787/260307292-6fd58fb2-64f8-471f-996a-b12d34716161.jpeg"  width="400" height="400">
  </div>
 
  <h4>Synthesis Tool Output:</h4>
@@ -696,7 +696,7 @@ endmodule
 	 <img src = "https://user-images.githubusercontent.com/140998787/260280378-0ae20c21-027e-4898-89a1-0775f25ee37a.png">
  </div>
  
-<h4>Explanation</h4>
+<br><h4>Explanation</h4><br>
 <b>Waveform for above circuit:</b><br>
 <div align ="center">
 	 <img src = "https://user-images.githubusercontent.com/140998787/260280380-2d1cc7d5-6e84-4544-9b49-f84d82951852.png">
@@ -760,7 +760,7 @@ endmodule
 	 <img src = "https://user-images.githubusercontent.com/140998787/260280351-4cc14a53-3fd9-4d7f-ab75-b6e9fc8c4ee6.png">
  </div>
  
-<h4>Explanation</h4>
+<br><h4>Explanation</h4><br>
 <b>Waveform for above circuit:</b><br>
 <div align ="center">
 	 <img src = "https://user-images.githubusercontent.com/140998787/260280354-7ec7056d-9de6-41ff-874f-4b5eb031c742.png">
@@ -822,7 +822,7 @@ endmodule
 	 <img src = "https://user-images.githubusercontent.com/140998787/260280338-bdb8da9f-772c-47db-b3c6-4158ace0fbde.png">
  </div>
  
-<h4>Explanation</h4>
+<br><h4>Explanation</h4><br>
 <b>Waveform for above circuit:</b><br>
 <div align ="center">
 	 <img src = "https://user-images.githubusercontent.com/140998787/260280333-802853f2-a23b-49cc-8b11-95e30e8aaea5.png">
@@ -880,7 +880,7 @@ endmodule
 	 <img src = "https://user-images.githubusercontent.com/140998787/260285591-2c24121a-95d8-4f89-8ecd-ce499c96c425.png">
  </div>
  
-<h4>Explanation</h4>
+<br><h4>Explanation</h4><br>
 <b>Waveform for above circuit:</b><br>
 <div align ="center">
 	 <img src = "https://user-images.githubusercontent.com/140998787/260285595-5de50eb7-9a50-4671-9d60-3a93941854a5.png">
