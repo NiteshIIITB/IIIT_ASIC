@@ -754,13 +754,13 @@ endmodule
 
  <h4>Synthesis Tool Output:</h4>
  <div align ="center">
-	 <img src = "">
+	 <img src = "https://user-images.githubusercontent.com/140998787/260280351-4cc14a53-3fd9-4d7f-ab75-b6e9fc8c4ee6.png">
  </div>
  
 <h4>Explanation</h4>
 <b>Waveform for above circuit:</b><br>
 <div align ="center">
-	 <img src = "">
+	 <img src = "https://user-images.githubusercontent.com/140998787/260280354-7ec7056d-9de6-41ff-874f-4b5eb031c742.png">
  </div>
 
  <p>From above waveforms it can be seen that the output and the intermediate signal value depends on clock so flip-flop is required.</p>
@@ -770,21 +770,18 @@ endmodule
 <p>
 	<h4>Steps Involved</h4>
 	 <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260280346-1928aaa8-362d-4d18-84ab-44e82e9e710c.png">
   </div>
 <br>
  <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260280341-7ec479b8-72e0-4e59-ae6f-5b804ca1f82d.png">
   </div>
   <br>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260280339-03bf3231-0c3f-4bee-a0eb-f305b0b7c360.png">
   </div>
   <br>
-   <div align="center">
-    <img src="path-to-your-image.jpg">
-  </div>
-  
+ 
 </p>
 
 <h3><u>Design 4</u></h3>
@@ -819,13 +816,13 @@ endmodule
 
  <h4>Synthesis Tool Output:</h4>
  <div align ="center">
-	 <img src = "">
+	 <img src = "https://user-images.githubusercontent.com/140998787/260280338-bdb8da9f-772c-47db-b3c6-4158ace0fbde.png">
  </div>
  
 <h4>Explanation</h4>
 <b>Waveform for above circuit:</b><br>
 <div align ="center">
-	 <img src = "">
+	 <img src = "https://user-images.githubusercontent.com/140998787/260280333-802853f2-a23b-49cc-8b11-95e30e8aaea5.png">
  </div>
 
  <p>From above waveforms it can be seen that the output and the intermediate signal value does not depends on clock so flip-flop is not required.</p>
@@ -834,20 +831,13 @@ endmodule
 <p>
 	<h4>Steps Involved</h4>
 	 <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260280336-44e68247-7336-4e8d-8c0b-1d7c127b27b8.png">
   </div>
 <br>
  <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://github.com/NiteshIIITB/IIIT_ASIC/assets/140998787/d141eecd-b298-437a-8ec3-cbfb9323aaa3">
   </div>
   <br>
-   <div align="center">
-    <img src="path-to-your-image.jpg">
-  </div>
-  <br>
-   <div align="center">
-    <img src="path-to-your-image.jpg">
-  </div>
   
 </p>
 
