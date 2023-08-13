@@ -243,6 +243,7 @@ endmodule
 		</ul>
 	</p>
 	<h2>Demonstrations</h2>
+	<details><summary><strong>Combinational logic optimisation</strong></summary>
 	<h3>Combinational logic optimisation</h3>
  <br>
  <h3>Design 1</h3>
@@ -608,7 +609,8 @@ endmodule
   </div>
   
 </p>
-
+</details>
+<details><summary><strong>Sequential Logic Optimisations</strong></summary>
 <h3>Sequential Logic Optimisations</h3><br>
 <p>In this section various cases of constant propogation in Sequential circuit are being demonstrated. Through logic optimisations via Sequential constant propogation it is seen that the cases in which conventional implementation is seen as a combination of flip-flops can be optimised to a circuit without flip-flops. Though constant propogation does not simply guarantee the reduction of flip-flops as is observed in the following examples. </p><hr>
 
@@ -841,9 +843,76 @@ endmodule
   
 </p>
 
+<h3><u>Design 5</u></h3>
+ 
+	
+```
+      
+module dff_const5(input clk, input reset, output reg q);
+reg q1;
+
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+	begin
+		q <= 1'b0;
+		q1 <= 1'b0;
+	end
+	else
+	begin
+		q1 <= 1'b1;
+		q <= q1;
+	end
+end
+
+endmodule
+
+```
+
+ <h4>Conventional implementation:</h4>
+ <div align ="center">
+	 <img src = "">
+ </div>
+
+ <h4>Synthesis Tool Output:</h4>
+ <div align ="center">
+	 <img src = "https://user-images.githubusercontent.com/140998787/260285591-2c24121a-95d8-4f89-8ecd-ce499c96c425.png">
+ </div>
+ 
+<h4>Explanation</h4>
+<b>Waveform for above circuit:</b><br>
+<div align ="center">
+	 <img src = "https://user-images.githubusercontent.com/140998787/260285595-5de50eb7-9a50-4671-9d60-3a93941854a5.png">
+ </div>
+<br>
+ <p>From above waveforms it can be seen that the output and the intermediate signal value depends on clock so flip-flop is required.</p>
+
+</p>
+<p>
+	<h4>Steps Involved</h4>
+	 <div align="center">
+    <img src="https://user-images.githubusercontent.com/140998787/260285584-e1592296-a2ce-419e-9568-818a8540d888.png">
+  </div>
+<br>
+ <div align="center">
+    <img src="https://user-images.githubusercontent.com/140998787/260285587-242511f8-c569-4188-9927-ed6af5636ccb.png">
+  </div>
+  <br>
+
+   <div align="center">
+    <img src="https://user-images.githubusercontent.com/140998787/260285549-e507e91a-51d6-435b-ab76-94708f5e3a6b.png">
+  </div>
+  <br>
+
+  <div align="center">
+    <img src="https://user-images.githubusercontent.com/140998787/260285590-c82807db-af80-4091-92b0-80b71c6c231c.png">
+  </div>
+  <br>
+  
+</p>
 
 
-
+</details>
 
 </details>
 
