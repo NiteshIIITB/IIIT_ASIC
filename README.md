@@ -635,7 +635,7 @@ endmodule
 
  <h4>Unoptimised implementation:</h4>
  <div align ="center">
-	 <img src = "">
+	 <img src = "https://user-images.githubusercontent.com/140998787/260307292-6fd58fb2-64f8-471f-996a-b12d34716161.jpeg">
  </div>
 
  <h4>Synthesis Tool Output:</h4>
@@ -649,7 +649,7 @@ endmodule
 	 <img src = "https://user-images.githubusercontent.com/140998787/260283302-59f55bf4-6c76-4b3a-9d13-06a99ec810ff.png">
  </div>
 
- <p>From above waveforms it can be seen that the output depends on clock so presence of flip-flop is required.</p>
+ <p>From above waveforms it can be seen that the output depends on clock so presence of flip-flop is required.Hence unoptimised representation is same as final output.</p>
 
 </p>
 <p>
@@ -682,13 +682,13 @@ endmodule
 	else
 		q <= 1'b1;
         end
-
+        //here q remains 1 always
         endmodule
 ```
 
  <h4>Unoptimised implementation:</h4>
  <div align ="center">
-	 <img src = "">
+	 <img src = "https://user-images.githubusercontent.com/140998787/260307292-6fd58fb2-64f8-471f-996a-b12d34716161.jpeg">
  </div>
 
  <h4>Synthesis Tool Output:</h4>
