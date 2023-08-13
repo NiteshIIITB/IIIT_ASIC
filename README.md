@@ -255,7 +255,7 @@ endmodule
 ```
 
 <br>
-<b>Conventional Implementation:</b>
+<b>Unoptimised Implementation:</b>
    <div align="center">
     <img src="https://user-images.githubusercontent.com/140998787/260305003-db18752e-aca7-4411-b132-f7dbf4b4305c.jpeg" width="400" height="400">
   </div>
@@ -271,7 +271,7 @@ endmodule
 	<b>Equivalence of both</b><br>
 	
 ```
-         From Conventional  Circuit:
+         From Unoptimised  Circuit:
 	 Y = a.b + a`.0
          Y = a.b
 	 Both circuits are equivalent
@@ -309,7 +309,7 @@ endmodule
 ```
 
 <br>
-<b>Conventional Implementation:</b>
+<b>Unoptimised Implementation:</b>
    <div align="center">
     <img src="https://user-images.githubusercontent.com/140998787/260305542-53f343c9-6fe2-4aea-95a8-7bdfcc7cb85e.jpeg" width="400" height="400">
   </div>
@@ -325,7 +325,7 @@ endmodule
 	<b>Equivalence of both</b><br>
 	
 ```
-         From Conventional  Circuit:
+         From Unoptimised  Circuit:
 	 Y = a.1 + a`.b
          Y = a + a`.b   
          Y = a + b  (by distributive law)
@@ -362,9 +362,9 @@ module opt_check3 (input a , input b, input c , output y);
 endmodule
 ```
 <br>
-<b>Conventional Implementation:</b>
+<b>Unoptimised Implementation:</b>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260306384-db70ba57-c14e-43c2-8a18-7d337f026bcf.jpeg" width="400" height="400">
   </div>
   <br>
   <b>Synthesis Tool Output:</b>
@@ -378,7 +378,7 @@ endmodule
 	<b>Equivalence of both</b><br>
 	
 ```
-         From Conventional  Circuit:
+         From Unoptimised  Circuit:
 	 Y = a.(c.b + c`.0) + a`.0
          Y = a(b.c) + 0  
          Y = a.b.c 
@@ -416,9 +416,9 @@ module opt_check4 (input a , input b , input c , output y);
 ```
 
 <br>
-<b>Conventional Implementation:</b>
+<b>Unoptimised Implementation:</b>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260306363-211a2c04-860c-4c46-b032-fad1516d714f.jpeg" width="400" height="400">
   </div>
   <br>
   <b>Synthesis Tool Output:</b>
@@ -432,12 +432,13 @@ module opt_check4 (input a , input b , input c , output y);
 	<b>Equivalence of both</b><br>
 	
 ```
-         From Conventional  Circuit:
+         From Unoptimised  Circuit:
 	 Y = a.(b(a.c)+ b`c) + a`.c`
          Y = a(b.c.a + b`c) + a`.c`
          Y = ac(a+b`) + a`.c`
-         Y = ac +
-         Y = a.b.c 
+         Y = ac + ab`c + a`.c`
+         Y = ac + a`.c`
+
 	 Both circuits are equivalent
 	
 ```
@@ -491,7 +492,7 @@ endmodule
 ```
 
 <br>
-<b>Conventional Implementation:</b>
+<b>Unoptimised Implementation:</b>
    <div align="center">
     <img src="path-to-your-image.jpg">
   </div>
@@ -507,7 +508,7 @@ endmodule
 	<b>Equivalence of both</b><br>
 	
 ```
-         From Conventional  Circuit:
+         From Unoptimised  Circuit:
 	 Y = a.(b(a.c)+ b`c) + a`.c`
          Y = a(b.c.a + b`c) + a`.c`
          Y = ac(a+b`) + a`.c`
@@ -563,7 +564,7 @@ sub_module U4 (.a(n3), .b(n1) , .y(y));
 endmodule
 ```
 <br>
-<b>Conventional Implementation:</b>
+<b>Unoptimised Implementation:</b>
    <div align="center">
     <img src="path-to-your-image.jpg">
   </div>
@@ -579,7 +580,7 @@ endmodule
 	<b>Equivalence of both</b><br>
 	
 ```
-         From Conventional  Circuit:
+         From Unoptimised  Circuit:
 	 Y = a.(b(a.c)+ b`c) + a`.c`
          Y = a(b.c.a + b`c) + a`.c`
          Y = ac(a+b`) + a`.c`
@@ -612,7 +613,7 @@ endmodule
 </details>
 <details><summary><strong>Sequential Logic Optimisations</strong></summary>
 <h3>Sequential Logic Optimisations</h3><br>
-<p>In this section various cases of constant propogation in Sequential circuit are being demonstrated. Through logic optimisations via Sequential constant propogation it is seen that the cases in which conventional implementation is seen as a combination of flip-flops can be optimised to a circuit without flip-flops. Though constant propogation does not simply guarantee the reduction of flip-flops as is observed in the following examples. </p><hr>
+<p>In this section various cases of constant propogation in Sequential circuit are being demonstrated. Through logic optimisations via Sequential constant propogation it is seen that the cases in which Unoptimised implementation is seen as a combination of flip-flops can be optimised to a circuit without flip-flops. Though constant propogation does not simply guarantee the reduction of flip-flops as is observed in the following examples. </p><hr>
 
 
 <p>
@@ -632,7 +633,7 @@ endmodule
 
 ```
 
- <h4>Conventional implementation:</h4>
+ <h4>Unoptimised implementation:</h4>
  <div align ="center">
 	 <img src = "">
  </div>
@@ -685,7 +686,7 @@ endmodule
         endmodule
 ```
 
- <h4>Conventional implementation:</h4>
+ <h4>Unoptimised implementation:</h4>
  <div align ="center">
 	 <img src = "">
  </div>
@@ -749,7 +750,7 @@ endmodule
 
 ```
 
- <h4>Conventional implementation:</h4>
+ <h4>Unoptimised implementation:</h4>
  <div align ="center">
 	 <img src = "">
  </div>
@@ -811,7 +812,7 @@ endmodule
 
 ```
 
- <h4>Conventional implementation:</h4>
+ <h4>Unoptimised implementation:</h4>
  <div align ="center">
 	 <img src = "">
  </div>
@@ -869,7 +870,7 @@ endmodule
 
 ```
 
- <h4>Conventional implementation:</h4>
+ <h4>Unoptimised implementation:</h4>
  <div align ="center">
 	 <img src = "">
  </div>
