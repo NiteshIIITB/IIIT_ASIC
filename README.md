@@ -1343,6 +1343,51 @@ endmodule
 
   </details>
   
+  <details>
+	  <summary><strong>Incomplete Case</strong></summary>
+          <h2>Various Case Statements</h2>
+	  <h3>Design 1 Verilog Code</h3>
+
+ ```
+
+module incomp_case (input i0 , input i1 , input i2 , input [1:0] sel, output reg y);
+always @ (*)
+begin
+	case(sel)
+		2'b00 : y = i0;
+		2'b01 : y = i1;
+	endcase
+end
+endmodule
+
+```
+<br>
+<p>Action corresponding to sel = 10 and sel = 11 is not specified so ouput remains unchanged and a latch is inferred.</p>
+<br>
+<h3>Waveform</h3>
+<div align = "center">
+
+<img src = "https://user-images.githubusercontent.com/140998787/260573152-af3bfbd4-b434-4e79-ad90-bc99002adc0f.png">
+	
+</div>
+<br>
+<h3>Components Inferred</h3>
+<div align = "center">
+
+<img src = "https://user-images.githubusercontent.com/140998787/260573136-aa2646cc-aa50-434e-a88b-946f7e7f8a2f.png">
+	
+</div>
+<br>
+<h3>Output Circuit</h3>
+<div align = "center">
+
+<img src = "https://user-images.githubusercontent.com/140998787/260573147-e7edee64-eac8-411e-8ee4-b43fc6d3c4cb.png">
+	
+</div>
+<br>
+	  
+  </details>
+  
 </details>
  
 
