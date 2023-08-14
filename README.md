@@ -1262,8 +1262,44 @@ endmodule
 <br>
 <p>Here at similar point(a=0,b=0 and c=1) we get output d=1. Hence again Synthesis Simulation Mismatch is observed and highlighted by GLS.Through this we infer both importance of GLS and cautiousness we need to observe while using blocking statements.</p>
 </details>
- 
 </details>
+
+<details>
+	
+<summary><strong>Day 5</strong></summary>
+
+  <details>
+	  <summary><strong>Incomplete If</strong></summary>
+	  <h2>Incomplete if</h2>
+	  <h3>Design 1 Verilog Code</h3>
+
+```
+module incomp_if (input i0 , input i1 , input i2 , output reg y);
+always @ (*)
+begin
+	if(i0)
+		y <= i1;
+end
+endmodule
+
+```
+<p>Here action corresponding to else condition is not specified so output will remain same when if condition is not met and a latch will be inferred.</p>
+<h3>Waveform</h3>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260558368-7655ac13-3d1c-40e4-a7dd-a59953bdee11.png">
+</div>
+<h3>Components Inferred</h3>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260558356-3d69c7a5-1fad-4715-bb9c-3b2440dcc2a2.png">
+</div>
+<h3>Synthesis Output</h3>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260558365-b4c88c2d-d5fc-408b-9d39-a3cd35c8d5c0.png">
+</div>
+  </details>
+</details>
+ 
+
 
 <h2>References</h2>
  <ul>
