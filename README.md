@@ -997,6 +997,17 @@ In the above circuit code is defining an up counter and output depends on all th
 
 </details>
 
+<details>
+	<summary><strong>Day 4</strong></summary>
+	<h2>Gate Level Simulation</h2>
+	<p>Gate Level Simulation(GLS) is as step in ASIC design flow through we verify the timing constraints and the Functionality of the netlist obtained through RTL synthesis. This ensures Logical equivalence between the RTL design and Netlist obtained. The image below highlights the process of GLS :<br>
+		<div align = "center">
+			<img src = "https://user-images.githubusercontent.com/140998787/260448595-3e2ace43-f7af-49ca-9f2b-3d7be70d2f5c.png"> <br>
+		</div>
+	Though GLS can be used to analyse timing aspect of the netlist obtained the focus of the following work remains on verifying Functionality.
+	</p>
+</details>
+
 <h2>References</h2>
 <ul>
 	<li><a href ="https://github.com/kunalg123/">Kunal Ghosh Github(Mentor)</a></li>
