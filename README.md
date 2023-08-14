@@ -1004,6 +1004,7 @@ In the above circuit code is defining an up counter and output depends on all th
 		<div align = "center">
 			<img src = "https://user-images.githubusercontent.com/140998787/260448595-3e2ace43-f7af-49ca-9f2b-3d7be70d2f5c.png"> <br>
 		</div>
+	<br>The Design in above image refers to the netlist obtained through synthesis. The main reason for doing GLS is synthesis simulation mismatch which may occur due to a variety of reasons.
 	Though GLS can be used to analyse timing aspect of the netlist obtained the focus of the following work remains on verifying Functionality.
 	</p>
 </details>
