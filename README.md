@@ -515,7 +515,7 @@ endmodule
 
  <h3>Synthesis Output Circuit</h3>
 <div align = "center">
-<img src = "https://user-images.githubusercontent.com/140998787/260728940-8af057f8-eaa4-4d93-9e49-e4e0927d4347.png">
+<img src = "https://user-images.githubusercontent.com/140998787/260735492-7192eedd-6ec6-49a3-8bf2-4d0890d9cb8f.png">
 </div>
 
 </details>
@@ -552,7 +552,7 @@ endmodule
 
  <h3>Synthesis Output Circuit</h3>
 <div align = "center">
-<img src = "https://github.com/NiteshIIITB/IIIT_ASIC/assets/140998787/6494ca74-9059-4e75-8f51-662e4539a436">
+<img src = "https://user-images.githubusercontent.com/140998787/260733761-cf43ddf2-dbde-42c3-b750-8be58eca7d97.png">
 </div>
 
 
