@@ -444,7 +444,90 @@ endmodule
 
 </details>
 <details>
-	<summary><strong>Flop Coding Styles and optimisations</strong></summary>
+<summary><strong>Flop Coding Styles and optimisations</strong></summary>
+<details>
+<summary>DFF_async_reset</summary>
+<h3>Verilog Code</h3>
+	
+```
+module dff_asyncres ( input clk ,  input async_reset , input d , output reg q );
+always @ (posedge clk , posedge async_reset)
+begin
+	if(async_reset)
+		q <= 1'b0;
+	else	
+		q <= d;
+end
+endmodule`
+
+```
+
+
+<h3>Output Waveform</h3>
+
+<div align = "center">
+<img src = "https://user-images.githubusercontent.com/140998787/260717393-38dec2c2-5992-4aff-be65-57b7bf204b62.png">
+
+</div>
+	
+</details>
+<details>
+<summary>DFF_async_set</summary>
+<h3>Verilog Code</h3>
+	
+```
+
+
+module dff_async_set ( input clk ,  input async_set , input d , output reg q );
+always @ (posedge clk , posedge async_set)
+begin
+	if(async_set)
+		q <= 1'b1;
+	else	
+		q <= d;
+end
+endmodule
+
+```
+
+
+<h3>Output Waveform</h3>
+
+<div align = "center">
+<img src = "https://user-images.githubusercontent.com/140998787/260719219-71c448ad-5979-4f39-9cb0-9fdbdbce8d09.png">
+
+</div>
+
+</details>
+<details>
+<summary>DFF_sync_reset</summary>
+	<h3>Verilog Code</h3>
+	
+```
+
+module dff_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );
+always @ (posedge clk )
+begin
+	if (sync_reset)
+		q <= 1'b0;
+	else	
+		q <= d;
+end
+endmodule
+
+
+```
+
+
+<h3>Output Waveform</h3>
+
+ <div align = "center">
+<img src = "https://user-images.githubusercontent.com/140998787/260721466-48abf7ee-91fc-40bd-82a8-9ff5df6c69ce.png">
+
+</div>
+
+</details>
+	
 </details>
 
 
