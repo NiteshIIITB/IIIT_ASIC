@@ -213,17 +213,23 @@ endmodule
 </p>
 	
 </details>
+
 <details>
-	<summary><strong>Day2</strong></summary>
-	<h2>Hierarchical vs Flat Synthesis</h2>
-	<h3>Hierarchical Synthesis</h3>
-	<p>Hierarchical Synthesis involves breaking down the design into manageable and modular sub-modules before synthesis. Each sub-module is treated as a separate entity, with its own logic synthesis process. The resulting synthesized sub-modules are then integrated to form the complete design. </p>
-	<br>
-	<h3>Flat Synthesis</h3>
-	<p>Flat Synthesis, on the other hand, treats the entire design as a single entity during the logic synthesis process. All logic is synthesized in one step, without dividing the design into sub-modules.</p>
-	<br>
-	<h3>Hierarchical Synthesis Example</h3>
-	<h4>Verilog code</h4>
+<summary><strong>Day2</strong></summary>
+<details>
+<summary><strong>Hierarchical vs Flat Synthesis</strong></summary>
+	
+<h2>Hierarchical vs Flat Synthesis</h2>
+	
+<h3>Hierarchical Synthesis</h3>
+<p>Hierarchical Synthesis involves breaking down the design into manageable and modular sub-modules before synthesis. Each sub-module is treated as a separate entity, with its own logic synthesis process. The resulting synthesized sub-modules are then integrated to form the complete design. </p>
+<br>
+<h3>Flat Synthesis</h3>
+<p>Flat Synthesis, on the other hand, treats the entire design as a single entity during the logic synthesis process. All logic is synthesized in one step, without dividing the design into sub-modules.</p>
+<br>
+<h3>Hierarchical Synthesis Example</h3>
+<h4>Verilog code</h4>
+ 
 	
 ```
 module sub_module1(input a , input b , output y);
@@ -436,7 +442,10 @@ endmodule
 	
 </div>
 
-
+</details>
+<details>
+	<summary><strong>Flop Coding Styles and optimisations</strong></summary>
+</details>
 
 
 
