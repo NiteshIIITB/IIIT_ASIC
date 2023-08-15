@@ -417,6 +417,29 @@ endmodule
 	
 </div>
 
+<h3>SubModule Synthesis</h3>
+<p>To synthesize large designs which either include multiple copies of a single module or are too large to synthesize in a single go make use of submodule synthesis.</p>
+<h3>Steps Involved</h3>
+<br>
+<div align = "center">
+<img src = "https://user-images.githubusercontent.com/140998787/260707273-91757670-3e9f-473c-810d-c161561cdbd5.png">
+	
+</div>
+<br>
+<div align = "center">
+<img src = "https://user-images.githubusercontent.com/140998787/260707254-76a56bb7-2e22-4c2f-86a0-1b4267fa5e6e.png">
+	
+</div>
+<br>
+<div align = "center">
+<img src = "https://user-images.githubusercontent.com/140998787/260707283-bb349ba1-bf86-4f55-bf56-3f6be8fc2cd7.png">
+	
+</div>
+
+
+
+
+
 </details>
 
 <details>
