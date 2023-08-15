@@ -558,6 +558,27 @@ endmodule
 
 
 </details>
+<details>
+<summary>Multiplier(x2)</summary>
+<h3>Verilog Code</h3>
+
+```
+module mul2 (input [2:0] a, output [3:0] y);
+	assign y = a * 2;
+endmodule
+
+```
+<h3>Components Inferred</h3>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260773724-e940a63f-6997-4d0f-a167-e75df369d456.png">
+</div>
+
+<h3>Synthesis output</h3>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260774029-fe0ffc73-5ffb-42d3-bee3-420d2c70a126.png">
+</div>
+
+</details>
 	
 </details>
 
