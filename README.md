@@ -217,6 +217,18 @@ endmodule
 <details>
 <summary><strong>Day2</strong></summary>
 <details>
+<summary><strong>sky130_fd_sc_hd__tt_025C_1v80.lib</strong></summary>
+<h3>Some Key Points:</h3>
+<ul>
+<li>The library contains specifications and description of standard cells that are used to create various digital circuits.There are many cells in the library implementing the same     functionality but they differ in their area, leakage power and operating speed. The cells with larger area consumes more power but they are faster.</li>
+	<br>		
+<li>sky130: This refers to a specific semiconductor process technology node. Semiconductor processes are designated by specific nodes, often represented by a number (such as 130). Each node represents a set of manufacturing capabilities, transistor sizes, and other specifications for creating integrated circuits.</li>
+<br>
+<li>1v80: This refer to the supply voltage for which the library is optimized. In this case, "1v80" might represent 1.80 volts.</li>
+	
+ </ul>
+</details>
+<details>
 <summary><strong>Hierarchical vs Flat Synthesis</strong></summary>
 	
 <h2>Hierarchical vs Flat Synthesis</h2>
