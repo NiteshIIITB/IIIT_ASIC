@@ -857,21 +857,7 @@ endmodule
   <br>
   
     
-<p>
-	<b>Equivalence of both</b><br>
-	
-```
-         From Unoptimised  Circuit:
-	 Y = a.(b(a.c)+ b`c) + a`.c`
-         Y = a(b.c.a + b`c) + a`.c`
-         Y = ac(a+b`) + a`.c`
-         Y = ac +
-         Y = a.b.c 
-	 Both circuits are equivalent
-	
-```
 
-</p>
 <p>
 	<h4>Steps Involved</h4>
 	 <div align="center">
@@ -921,43 +907,26 @@ endmodule
   <br>
   <b>Synthesis Tool Output:</b>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260767921-d3308aa4-95f6-458b-930e-d46a08f88fac.png">
   </div>
   <br>
   
     
-<p>
-	<b>Equivalence of both</b><br>
-	
-```
-         From Unoptimised  Circuit:
-	 Y = a.(b(a.c)+ b`c) + a`.c`
-         Y = a(b.c.a + b`c) + a`.c`
-         Y = ac(a+b`) + a`.c`
-         Y = ac +
-         Y = a.b.c 
-	 Both circuits are equivalent
-	
-```
 
-</p>
 <p>
 	<h4>Steps Involved</h4>
 	 <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260768496-bc8458b9-2b77-42ec-a36d-8c0d5aaee349.png">
   </div>
 <br>
  <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260768893-1764610b-045b-439f-830f-0973ca6b13a3.png">
   </div>
   <br>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260769216-a0c329bc-c9a8-4e32-a792-37c78dbf1e03.png">
   </div>
-  <br>
-   <div align="center">
-    <img src="path-to-your-image.jpg">
-  </div>
+
   
 </p>
 </details>
