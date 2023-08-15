@@ -469,6 +469,16 @@ endmodule`
 <img src = "https://user-images.githubusercontent.com/140998787/260717393-38dec2c2-5992-4aff-be65-57b7bf204b62.png">
 
 </div>
+
+<h3>Components Inferred</h3>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260726222-d94c098c-6cf6-4d6d-bc9e-505278ad3807.png">
+</div>
+
+ <h3>Synthesis Output Circuit</h3>
+<div align = "center">
+<img src = "https://user-images.githubusercontent.com/140998787/260726214-0162676b-f7bc-4568-85d2-01f515453fce.png">
+</div>
 	
 </details>
 <details>
