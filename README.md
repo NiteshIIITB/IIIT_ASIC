@@ -1481,6 +1481,66 @@ endmodule
 </div>
 <br>
 
+<br>
+ <h3>Design 4 Verilog Code</h3>
+
+ ```
+
+module bad_case (input i0 , input i1, input i2, input i3 , input [1:0] sel, output reg y);
+always @(*)
+begin
+	case(sel)
+		2'b00: y = i0;
+		2'b01: y = i1;
+		2'b10: y = i2;
+		2'b1?: y = i3;
+		//2'b11: y = i3;
+	endcase
+end
+
+endmodule
+
+
+```
+<br>
+<p>For sel = 10 we have two matching conditions which is not a good coding practice and produces errorneous results as we see in following text.</p>
+
+<br>
+<h3>Waveform of RTL SImulation</h3>
+<div align = "center">
+
+<img src = "https://user-images.githubusercontent.com/140998787/260622555-1c29e6d8-cb8c-4df5-a4c7-ac89613d412d.png">
+	
+</div>
+<br>
+
+<br>
+<h3>Components Inferred</h3>
+<div align = "center">
+
+<img src = "https://user-images.githubusercontent.com/140998787/260622560-697eb737-c7b5-4a44-a4ef-6b61cbe472c0.png">
+	
+</div>
+<br>
+<h3>Output Circuit</h3>
+<div align = "center">
+
+<img src = "https://user-images.githubusercontent.com/140998787/260622561-58a23e3d-d288-4d01-b2df-24094fcf830b.png">
+	
+</div>
+<br>
+
+<h3>Waveform of Above Netlist</h3>
+<div align = "center">
+
+<img src = "https://user-images.githubusercontent.com/140998787/260622559-6b035481-4c0e-4e21-87b2-8e841ffdf12e.png">
+	
+</div>
+<br>
+In the above waveform, for sel = 10 output is mirroring i2 and for sel = 11 output is mirroring i3 whereas incase of RTL simulation waveform output remains constant so it is producing a mismatch.
+It is due to a badly written case statement where we have more than one conditions matching for the same input.
+<br>
+
   </details>
   
 </details>
