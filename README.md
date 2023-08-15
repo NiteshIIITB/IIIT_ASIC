@@ -974,7 +974,7 @@ endmodule
 <br>
 <b>Unoptimised Implementation:</b>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260780634-c64743c0-6940-4ba5-8de1-354b892c8e78.png">
   </div>
   <br>
   <b>Synthesis Tool Output:</b>
