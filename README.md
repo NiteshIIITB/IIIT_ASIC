@@ -1578,7 +1578,42 @@ endmodule
 <div align = "center">
 	<img src = "https://user-images.githubusercontent.com/140998787/260645038-3dea201d-411b-4cb1-b89f-33b742d2a97c.png">
 </div>
+<br>
+<h3>Design 2 DeMux Verilog Code</h3>
 
+```
+
+module demux_generate (output o0 , output o1, output o2 , output o3, output o4, output o5, output o6 , output o7 , input [2:0] sel  , input i);
+reg [7:0]y_int;
+assign {o7,o6,o5,o4,o3,o2,o1,o0} = y_int;
+integer k;
+always @ (*)
+begin
+y_int = 8'b0;
+for(k = 0; k < 8; k++) begin
+	if(k == sel)
+		y_int[k] = i;
+end
+end
+endmodule
+
+
+```
+
+<h3>Waveform </h3>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260647219-e83fb946-ea2d-4cbd-abf5-76ae5a7854be.png">
+</div>
+<br>
+<h3>Components Inferred</h3>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260648515-7f020e5a-6d7c-430e-8d12-85513b32ba8d.png">
+</div>
+<br>
+<h3>Synthesis Output</h3>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260648510-76addbab-651c-4b73-bd5b-602f9b413ef0.png">
+</div>
 	  
   </details>
   
