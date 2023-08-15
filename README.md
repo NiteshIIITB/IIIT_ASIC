@@ -1460,25 +1460,27 @@ endmodule
 <h3>Waveform</h3>
 <div align = "center">
 
-<img src = "https://user-images.githubusercontent.com/140998787/260581582-7667b7cd-8668-432b-9239-49bbfee8e831.png">
+<img src = "https://user-images.githubusercontent.com/140998787/260618651-341e2c05-fe92-40be-82e7-1a51424ddb54.png">
 	
 </div>
+<br>
+<p>The value of x remains unchanged for the period when sel = 01.</p>
 <br>
 <h3>Components Inferred</h3>
 <div align = "center">
 
-<img src = "https://user-images.githubusercontent.com/140998787/260581573-b7f3c6db-5136-45ab-9f4f-93a1acc0c6df.png">
+<img src = "https://user-images.githubusercontent.com/140998787/260618641-0f009e41-472e-4eea-9d5c-4f3ec7a595ac.png">
 	
 </div>
 <br>
 <h3>Output Circuit</h3>
 <div align = "center">
 
-<img src = "https://user-images.githubusercontent.com/140998787/260581579-5cfaa54a-503a-4084-b890-210cef96845a.png">
+<img src = "https://user-images.githubusercontent.com/140998787/260618647-9c418c26-8de4-4368-9ebe-d1664514edbd.png">
 	
 </div>
 <br>
-<p>In this RTL, case statement is specified completely so no latch is inferred.</p>	
+
   </details>
   
 </details>
