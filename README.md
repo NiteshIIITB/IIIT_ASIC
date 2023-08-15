@@ -1614,6 +1614,51 @@ endmodule
 <div align = "center">
 	<img src = "https://user-images.githubusercontent.com/140998787/260648510-76addbab-651c-4b73-bd5b-602f9b413ef0.png">
 </div>
+
+<br>
+<h3>Design Ripple Carry Adder using generate</h3>
+
+```
+
+module fa (input a , input b , input c, output co , output sum);
+	assign {co,sum}  = a + b + c ;
+endmodule
+
+module rca (input [7:0] num1 , input [7:0] num2 , output [8:0] sum);
+wire [7:0] int_sum;
+wire [7:0]int_co;
+
+genvar i;
+generate
+	for (i = 1 ; i < 8; i=i+1) begin
+		fa u_fa_1 (.a(num1[i]),.b(num2[i]),.c(int_co[i-1]),.co(int_co[i]),.sum(int_sum[i]));
+	end
+
+endgenerate
+fa u_fa_0 (.a(num1[0]),.b(num2[0]),.c(1'b0),.co(int_co[0]),.sum(int_sum[0]));
+
+
+assign sum[7:0] = int_sum;
+assign sum[8] = int_co[7];
+endmodule
+
+
+```
+
+<h3>Waveform </h3>
+<div align = "center">
+	<img src = "https://github.com/NiteshIIITB/IIIT_ASIC/assets/140998787/0038dde5-01ec-4ea6-a3e7-d2b493d0eb04">
+</div>
+<br>
+<h3>Components Inferred</h3>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260670384-10128dc7-fd8f-4557-b83f-05a74673ff18.png">
+</div>
+<br>
+<h3>Synthesis Output</h3>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260670388-f28aefae-0fc6-44ca-8432-e23956b2e825.png">
+</div>
 	  
   </details>
   
