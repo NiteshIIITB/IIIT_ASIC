@@ -508,6 +508,16 @@ endmodule
 
 </div>
 
+<h3>Components Inferred</h3>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260728952-31247dc8-a41a-49ae-9088-4a0d03fc20fa.png">
+</div>
+
+ <h3>Synthesis Output Circuit</h3>
+<div align = "center">
+<img src = "https://user-images.githubusercontent.com/140998787/260728940-8af057f8-eaa4-4d93-9e49-e4e0927d4347.png">
+</div>
+
 </details>
 <details>
 <summary>DFF_sync_reset</summary>
@@ -535,6 +545,17 @@ endmodule
 <img src = "https://user-images.githubusercontent.com/140998787/260721466-48abf7ee-91fc-40bd-82a8-9ff5df6c69ce.png">
 
 </div>
+<h3>Components Inferred</h3>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260731187-54fb5cc9-24c0-411a-92da-2ef6f4c90959.png">
+</div>
+
+ <h3>Synthesis Output Circuit</h3>
+<div align = "center">
+<img src = "https://github.com/NiteshIIITB/IIIT_ASIC/assets/140998787/6494ca74-9059-4e75-8f51-662e4539a436">
+</div>
+
+
 
 </details>
 	
