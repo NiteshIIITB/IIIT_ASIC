@@ -1542,6 +1542,45 @@ It is due to a badly written case statement where we have more than one conditio
 <br>
 
   </details>
+  <details>
+	  <summary><strong>For Loop and For generate</strong></summary>
+	  <h3>Design 1 MUX Verilog Code</h3>
+
+```
+
+module mux_generate (input i0 , input i1, input i2 , input i3 , input [1:0] sel  , output reg y);
+wire [3:0] i_int;
+assign i_int = {i3,i2,i1,i0};
+integer k;
+always @ (*)
+begin
+for(k = 0; k < 4; k=k+1) begin
+	if(k == sel)
+		y = i_int[k];
+end
+end
+endmodule
+
+
+```
+
+<h3>Waveform Output</h3>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260643572-be3db5ac-9fa6-4855-8571-bb695ea3db85.png">
+</div>
+
+<h3>Components Inferred</h3>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260644536-345441ec-ff0a-48cb-921b-711937524a54.png">
+</div>
+
+<h3>Synthesis Output</h3>
+<div align = "center">
+	<img src = "https://user-images.githubusercontent.com/140998787/260645038-3dea201d-411b-4cb1-b89f-33b742d2a97c.png">
+</div>
+
+	  
+  </details>
   
 </details>
  
