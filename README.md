@@ -847,12 +847,12 @@ endmodule
 <br>
 <b>Unoptimised Implementation:</b>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260766149-d56ce6ad-03b3-40fd-b071-7651a6b15b7c.png">
   </div>
   <br>
   <b>Synthesis Tool Output:</b>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://github.com/NiteshIIITB/IIIT_ASIC/assets/140998787/5b5f7184-f053-4ffd-9354-77d7ea47800e">
   </div>
   <br>
   
@@ -875,21 +875,18 @@ endmodule
 <p>
 	<h4>Steps Involved</h4>
 	 <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260763595-1d10ac1d-37d0-4d77-954d-b58d2b16e471.png">
   </div>
 <br>
  <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260764984-c894385f-ac13-49a8-8f56-1417ec720c2d.png">
   </div>
   <br>
    <div align="center">
-    <img src="path-to-your-image.jpg">
+    <img src="https://user-images.githubusercontent.com/140998787/260765458-514cb3a7-8699-4b14-b435-1ec6ca4bf4f2.png">
   </div>
   <br>
-   <div align="center">
-    <img src="path-to-your-image.jpg">
-  </div>
-  
+ 
 </p>
 
 <br>
