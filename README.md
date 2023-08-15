@@ -1428,7 +1428,57 @@ endmodule
 	
 </div>
 <br>
-<p>In this RTL, case statement is specified completely so no latch is inferred.</p>	  
+<p>In this RTL, case statement is specified completely so no latch is inferred.</p>	
+<br>
+ <h3>Design 3 Verilog Code</h3>
+
+ ```
+module partial_case_assign (input i0 , input i1 , input i2 , input [1:0] sel, output reg y , output reg x);
+always @ (*)
+begin
+	case(sel)
+		2'b00 : begin
+			y = i0;
+			x = i2;
+			end
+		2'b01 : y = i1;
+		default : begin
+		           x = i1;
+			   y = i2;
+			  end
+	endcase
+end
+endmodule
+
+
+
+
+```
+<br>
+
+<br>
+<h3>Waveform</h3>
+<div align = "center">
+
+<img src = "https://user-images.githubusercontent.com/140998787/260581582-7667b7cd-8668-432b-9239-49bbfee8e831.png">
+	
+</div>
+<br>
+<h3>Components Inferred</h3>
+<div align = "center">
+
+<img src = "https://user-images.githubusercontent.com/140998787/260581573-b7f3c6db-5136-45ab-9f4f-93a1acc0c6df.png">
+	
+</div>
+<br>
+<h3>Output Circuit</h3>
+<div align = "center">
+
+<img src = "https://user-images.githubusercontent.com/140998787/260581579-5cfaa54a-503a-4084-b890-210cef96845a.png">
+	
+</div>
+<br>
+<p>In this RTL, case statement is specified completely so no latch is inferred.</p>	
   </details>
   
 </details>
