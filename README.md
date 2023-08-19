@@ -1,9 +1,11 @@
-# ASIC_Design_ProjectWork
+<h1>ASIC_Design_ProjectWork</h1>
 This repository highlights the work done by Nitesh Sharma pretaining to ASIC Design course.
 <br>
 Quick links:
 <br>
-[Tools Installation](#day0)
+
+
+<h2>RTL Synthesis</h2>
 <details>
   <summary> <strong>Day_0</strong></summary>
 	
@@ -2073,6 +2075,28 @@ endmodule
    
   </details>
   
+</details>
+
+<h2>RISC V</h2>
+
+<details>
+<summary><strong>Day 1</strong></summary>
+</details>
+
+<details>
+<summary><strong>Day 2</strong></summary>
+</details>
+
+<details>
+<summary><strong>Day 3</strong></summary>
+</details>
+
+<details>
+<summary><strong>Day 4</strong></summary>
+</details>
+
+<details>
+<summary><strong>Day 5</strong></summary>
 </details>
  
 
