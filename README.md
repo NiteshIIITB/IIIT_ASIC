@@ -2077,28 +2077,7 @@ endmodule
   
 </details>
 
-<h2>RISC V</h2>
 
-<details>
-<summary><strong>Day 1</strong></summary>
-</details>
-
-<details>
-<summary><strong>Day 2</strong></summary>
-</details>
-
-<details>
-<summary><strong>Day 3</strong></summary>
-</details>
-
-<details>
-<summary><strong>Day 4</strong></summary>
-</details>
-
-<details>
-<summary><strong>Day 5</strong></summary>
-</details>
- 
 
 
 <h2>References</h2>
